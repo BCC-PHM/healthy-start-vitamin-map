@@ -4,6 +4,7 @@ library(writexl)
 library(janitor)
 library("BSol.mapR")
 
+
 #####################################
 
 ActivityData <- read_excel("data/HSV Data 2025-26.xlsx") %>%
@@ -33,7 +34,7 @@ ActivityData <- read_excel("data/HSV Data 2025-26.xlsx") %>%
   ) %>%
   select(
     name, lsoa21_code, ward, issued_total_2526
-  )
+  ) 
 
 write_xlsx(ActivityData, "data/activity-2526-data-processed.xlsx")
 
