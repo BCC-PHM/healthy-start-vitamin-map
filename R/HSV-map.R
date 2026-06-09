@@ -39,7 +39,6 @@ ActivityData <- read_excel("data/HSV Data 2025-26.xlsx") %>%
 
 write_xlsx(ActivityData, "data/activity-2526-data-processed.xlsx")
 
-### plot distribution of vitamins by ward ###############
 
 ward_issued <- ActivityData %>%
   rename(Ward = ward) %>%
